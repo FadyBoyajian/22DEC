@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+nav{
+    position: fixed;
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Urbanist', sans-serif;
+    /* position: relative; */
+}
+
+.logo{
+    height: 50px;
+}
+.nav-links{
+    display: flex;
+
+}
+.nav-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 40px;
+    transition: 1s;
+
+}
+
+.nav-links a:hover{
+    background-color: #b79632;
+}
+
+.nav-lang{
+    text-align: center;
+}
+
+.flags img{
+    height: 30px;
+}
+
+.active{
+    background-color: #b79632;
+}
+
+.toggler{
+    display: none;
+}
+
+.toggler span{
+    cursor: pointer;
+    display: block;
+    margin: 5px;
+    border-radius: 10px;
+    height: 5px;
+    width: 40px;
+    background-color: #b79632;
+}
+
+
+@media screen and (max-width: 900px){
+    .toggler{
+        display: block;
+    }
+
+    .nav-links{
+
+        height: 100vh;
+        width: 300px;
+        background-color: black;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 50px;
+        right: 0;
+    }
+
+    .nav-links, .nav-lang{
+        display: none;
+    }
+
+    .nav-right:hover .nav-links{
+        display: flex;
+    }
+
+}
+
+
+/* Nav Ends */
+
+/* First Section Start */
+nav{
+    z-index: 9;
+}
+.first-section{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.first-section img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -10;
+}
+
+.layer{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(240, 248, 255, 0.146);
+}
+.first-text{
+    height: 100%;
+    width: 60%;
+    /* background-color: aqua; */
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.first-text h1{
+    font-weight: 500px;
+    font-size: 60px;
+}
+
+.first-text p{
+    font-weight: 500px;
+    font-size: 22px;
+    width: 400px;
+    margin: 30px 0;
+}
+
+.first-text button{
+    background-color: #b79632;
+    border-radius: 50px;
+    padding: 20px 40px;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.second-section{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(32, 28, 28);
+    display:flex;
+    flex-direction: row;
+}
+.first-part{
+    width: 55%;
+    height: 100%;
+    color: #b79632 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.first-part h1{
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 500px;
+    padding-bottom: 30px;
+}
+.first-part p{
+    font-size: larger;
+    width: 500px;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.second-part{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.second-part h2{
+    color: #b79632;
+    font-size: 25px;
+    font-weight: lighter;
+}
+.second-part p{
+    color: white;
+    font-size: larger;
+}
+.icon-one{
+    width: 550px;
+    padding: 10px;
+}
+.second-part img{
+    float: left;
+    padding: 10px;
+}
+.icon-two{
+    width: 550px;
+    padding: 10px;
+}
+.icon-three{
+    width: 550px;
+    padding: 10px;
+}
+.link-arrow{
+    float: right;
+
+}
+.icons-link a{
+    color: #b79632;
+    text-decoration: none;
+    font-size: larger;
+}
+.icons-link img{
+    float: right;
+}
+.icons-link a:hover{
+    color: white;
+}
+.third-section{
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(20, 18, 18);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-self: center;
+  
+}
+.exp-header{
+    width: 40%;
+    height: 70%;
+    color: white;
+    text-wrap: wrap;
+    display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    width: 30%;
+    height: 80%;
+}
+.exp-years{
+    color: #b79632;
+    font-size: 70px;
+}
+.third-section img{
+    width: 100%;
+    border-radius: 25px;
+}
+.img-judge{
+    width: 30%;
+    height: 80%;
+}
+.fourth-section{
+    width:100vw;
+    height: 120vh;
+    background-color: rgb(25, 29, 32);
+}
+.companies-header{
+    width: 100%;
+    height: 10%;
+    color: #b79632;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.companies-list{
+    width: 100vw;
+    height: 110%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;   
+    justify-content: center; 
+    align-self: center;
+}
+.companies{
+    width: 16.5%;
+    height: 25%;
+    color: #b79632;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    text-align: justify;
+}
+.companies img{
+    width: 80%;
+    height: 70%;
+}
+.companies h2{
+    text-align: center;
+}
+.fifth-section{
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(41, 38, 38);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: white solid 0.3px;
+}
+.contact-list{
+    width: 85%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+hr{
+    color: white;
+    border-bottom: white solid;
+}
+.contact-icons{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: white;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contact-infos a{
+    background-color: white;
+    width: 100%;
+    border-radius: 50px;
+}
+.contact-infos h1{
+    color: #b79632;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+.work-hours{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(41, 38, 38);
+    color: aliceblue;
+    text-align: center;
+    padding-top: 20px;
+    font-size: large;
+}

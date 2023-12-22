@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+nav{
+    position: fixed;
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Urbanist', sans-serif;
+    /* position: relative; */
+}
+
+.logo{
+    height: 50px;
+}
+.nav-links{
+    display: flex;
+
+}
+.nav-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 40px;
+    transition: 1s;
+
+}
+
+.nav-links a:hover{
+    background-color: #b79632;
+}
+
+.nav-lang{
+    text-align: center;
+}
+
+.flags img{
+    height: 30px;
+}
+
+.active{
+    background-color: #b79632;
+}
+
+.toggler{
+    display: none;
+}
+
+.toggler span{
+    cursor: pointer;
+    display: block;
+    margin: 5px;
+    border-radius: 10px;
+    height: 5px;
+    width: 40px;
+    background-color: #b79632;
+}
+
+
+@media screen and (max-width: 900px){
+    .toggler{
+        display: block;
+    }
+
+    .nav-links{
+
+        height: 100vh;
+        width: 300px;
+        background-color: black;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 50px;
+        right: 0;
+    }
+
+    .nav-links, .nav-lang{
+        display: none;
+    }
+
+    .nav-right:hover .nav-links{
+        display: flex;
+    }
+
+}
+
+.first-section{
+    width: 100vw;
+    height: 120vh;
+    padding-top: 100px;
+    background-color: rgb(22, 19, 19);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.header{
+    color: #b79632;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+.links a{
+    text-decoration: none;
+    color: #b79632;
+    border: #b79632;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fifth-section{
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(41, 38, 38);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: white solid 0.3px;
+}
+.contact-list{
+    width: 85%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+hr{
+    color: white;
+    border-bottom: white solid;
+}
+.contact-icons{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: white;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contact-infos a{
+    background-color: white;
+    width: 100%;
+    border-radius: 50px;
+}
+.contact-infos h1{
+    color: #b79632;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+.work-hours{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(41, 38, 38);
+    color: aliceblue;
+    text-align: center;
+    padding-top: 20px;
+    font-size: large;
+}
